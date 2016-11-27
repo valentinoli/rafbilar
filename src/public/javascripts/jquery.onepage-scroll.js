@@ -93,6 +93,11 @@
         paginationList = "";
         navItem = $(".nav-menu-item");
 
+    $('.logo-href').click(function () {
+      changeBackground(0);
+      el.moveTo(1);
+    });
+
     $.fn.transformPage = function(settings, pos, index) {
       if (typeof settings.beforeMove == 'function') settings.beforeMove(index);
 
