@@ -1,0 +1,16 @@
+.slider
+  .slide_viewer
+    .slide_group
+      each item in result
+        .slide
+          .img-wrapper
+          .cars-description
+            h2= item.manufacturer + ' ' + item.model
+            p= item.info
+.control-container
+  .slide_buttons
+  .directional_nav
+    .previous_btn(title='Previous')
+      span.glyphicon.glyphicon-chevron-left
+    .next_btn(title='Next')
+      span.glyphicon.glyphicon-chevron-right

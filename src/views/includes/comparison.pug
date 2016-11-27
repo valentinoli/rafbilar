@@ -1,0 +1,42 @@
+.comparison-container
+  p
+    | Hér geturðu borið saman mismunandi rafbíla. Borið er saman verð, batterístærð (kWh), drægni (km/hleðsla), afl (hö) og hámarkshraða (km/klst).
+  .buttons-container
+    .button-random
+      button.random-btn.btn.btn-primary(type='button') Handahóf
+    .dropdown
+      button.btn1.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+        | Veldu módel
+        span.caret
+      ul.dropdown-menu
+        each item in result
+          li(class= 'select-model1')
+            if item.model === 'B Class Electric Drive'
+              a Mercedes Benz B Class
+            else
+              a= item.manufacturer + ' ' + item.model
+    .dropdown
+      button.btn2.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+        | Veldu módel
+        span.caret
+      ul.dropdown-menu
+        each item in result
+          li(class= 'select-model2')
+            if item.model === 'B Class Electric Drive'
+              a Mercedes Benz B Class
+            else
+              a= item.manufacturer + ' ' + item.model
+  .comparison-img-container
+    .model-img
+      img.img.img-model1(src='', alt='Model 1')
+      h3.car-name1.car-name
+    .model-img
+      img.img.img-model2(src='', alt='Model 2')
+      h3.car-name2.car-name
+  input#comparison-result.cr(type='checkbox')
+  label.comparison-trigger(for='comparison-result')
+    #result-button
+      #button
+        a(href='#') Niðurstöður
+        #bg
+  include progresscontainers.pug

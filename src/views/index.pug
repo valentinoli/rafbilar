@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  include includes/nav.pug
+
+  .main
+    section.page1
+      header.main-page-header
+        .main-page-title
+          .main-page-text
+            h1 Rafbílar
+            .quote
+              p “The time is right for electric cars - in fact the time is critical.”
+              span - Carlos Ghosn
+        .mouse
+          .scroll
+
+    section.page2
+      include includes/slider.pug
+
+    section.page3
+      include includes/comparison.pug
+
+    section.page4
+      h3 Hleðslustöðvar
+      p Skoðaðu helstu hleðslustöðvarnar á landinu
+      #map
+
+    section.page5
+      include includes/about.pug
+
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+  script(src='./javascripts/jquery.onepage-scroll.js')
+  script(src='./javascripts/slider.js')
+  script(async='', defer='',  src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAcmDt79Tu1UJOOaJNTL_Sc6BZaWNlruak&callback=initMap')
+  script(src='./javascripts/map.js')
+  script(type='text/javascript').
+    var data = !{JSON.stringify(result)};
+  script(src='./javascripts/main.js')
