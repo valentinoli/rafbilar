@@ -16,5 +16,8 @@ Valentin Oliver Loftsson
 **Keyrið stylelint-villuathugun fyrir CSS**
 * npm run stylelint -s
 
-**Kveikið loks á vefþjón**
+**Kveikið loks á vefþjón og skoðið síðuna á localhost**
 * npm start
+
+**Skoðið síðuna einnig á internetinu**
+* https://rafbilar.herokuapp.com/
