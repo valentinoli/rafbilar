@@ -439,15 +439,17 @@ a.slide_btn {
 .progress-container div {
   display: flex;
   flex-direction: row;
-  align-items: center;
   border-radius: 5px;
 }
 
 .progress-container span {
-  width: 200px;
-  padding-left: 13px;
+  width: 285px;
+  padding-left: 20px;
+  padding-right: 8px;
   font-family: consolas;
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 
 .progress-container progress {
