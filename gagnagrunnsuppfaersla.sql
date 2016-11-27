@@ -23,6 +23,6 @@ INSERT INTO ElectricCars(manufacturer, model, picture, price, battery, range, ho
 INSERT INTO ElectricCars(manufacturer, model, picture, price, battery, range, horsepower, maxspeed, info) VALUES('Volkswagen','e-Golf','e-golf.jpg',4200000,24,190,115,140,'Rafmögnuð útgáfa af einum vinsælasta bíl heims, Golf. Hentugur bíll sem stendur undir nafni');
 INSERT INTO ElectricCars(manufacturer, model, picture, price, battery, range, horsepower, maxspeed, info) VALUES('Volkswagen','e-up!','e-up!.jpg',3000000,12,160,82,130,'Áreiðanlegur smábíll sem hentar vel innanbæjar.');
 INSERT INTO ElectricCars(manufacturer, model, picture, price, battery, range, horsepower, maxspeed, info) VALUES('BMW','i3','bmwi3.jpg',4000000,33,183,168,150,'Sportlegur bíll frá BMW. Þægilegur í keyrslu vegna mjög lágrar þyngdarmiðju.');
-INSERT INTO ElectricCars(manufacturer, model, picture, price, battery, range, horsepower, maxspeed, info) VALUES('Mercedes-Benz','B Class Electric Drive','B-Class-Electric-Drive.jpg',4600000,28,158,177,163,'Fyrsti hreini rafbíllinn frá Mercedes-Benz. Hann svíkur engann.');
+INSERT INTO ElectricCars(manufacturer, model, picture, price, battery, range, horsepower, maxspeed, info) VALUES('Mercedes-Benz','B Class E','B-Class-Electric-Drive.jpg',4600000,28,158,177,163,'Fyrsti hreini rafbíllinn frá Mercedes-Benz. Hann svíkur engann.');
 
 COMMIT;
