@@ -1,7 +1,5 @@
-/* routes hér */
 const express = require('express');
 const pgp = require('pg-promise')();
-// const xss = require('xss');
 
 const router = express.Router();
 
@@ -9,9 +7,9 @@ const password = require('./password');
 
 const user = password.dbUser();
 const pass = password.dbPass();
+const db = password.getDB();
 
-// const DATABASE = process.env.DATABASE_URL || `postgres://...'
-const DATABASE = `postgres://${user}:${pass}@localhost:5432/postgres`;
+const DATABASE = `postgres://${user}:${pass}@localhost:5432/${db}`;
 
 const db = pgp(DATABASE);
 
@@ -26,3 +24,4 @@ router.get('/', (req, res, next) => {
 });
 
 module.exports = router;
+
