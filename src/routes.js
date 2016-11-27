@@ -7,9 +7,9 @@ const password = require('./password');
 
 const user = password.dbUser();
 const pass = password.dbPass();
-const db = password.getDB();
+const dbname = password.getDB();
 
-const DATABASE = `postgres://${user}:${pass}@localhost:5432/${db}`;
+const DATABASE = `postgres://${user}:${pass}@localhost:5432/${dbname}`;
 
 const db = pgp(DATABASE);
 
