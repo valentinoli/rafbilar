@@ -11,10 +11,7 @@
       ul.dropdown-menu
         each item in result
           li(class= 'select-model1')
-            if item.model === 'B Class Electric Drive'
-              a Mercedes Benz B Class
-            else
-              a= item.manufacturer + ' ' + item.model
+            a= item.manufacturer + ' ' + item.model
     .dropdown
       button.btn2.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
         | Veldu módel
@@ -22,10 +19,7 @@
       ul.dropdown-menu
         each item in result
           li(class= 'select-model2')
-            if item.model === 'B Class Electric Drive'
-              a Mercedes Benz B Class
-            else
-              a= item.manufacturer + ' ' + item.model
+            a= item.manufacturer + ' ' + item.model
   .comparison-img-container
     .model-img
       img.img.img-model1(src='', alt='Model 1')

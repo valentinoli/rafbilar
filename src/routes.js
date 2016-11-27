@@ -8,8 +8,9 @@ const password = require('./password');
 const user = password.dbUser();
 const pass = password.dbPass();
 const dbname = password.getDB();
+const host = password.getHost();
 
-const DATABASE = `postgres://${user}:${pass}@localhost:5432/${dbname}`;
+const DATABASE = `postgres://${user}:${pass}@${host}:5432/${dbname}`;
 
 const db = pgp(DATABASE);
 
@@ -24,4 +25,3 @@ router.get('/', (req, res, next) => {
 });
 
 module.exports = router;
-

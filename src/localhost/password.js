@@ -8,19 +8,19 @@ function secret(str) {
 }
 
 function dbUser() {
-  return secret('00660061006200790062006d0075007a0075006800730073006f0061');
+  return secret('0070006f007300740067007200650073');
 }
 
 function dbPass() {
-  return secret('007800470055005a00720059007900590037003100590055006e006900380036007a00410061005a006e0073006d004600460066');
+  return secret('0070006f007300740067007200650073');
 }
 
 function getDB() {
-  return 'dbagrbip5ic02v';
+  return 'postgres';
 }
 
 function getHost() {
-  return 'ec2-54-247-98-197.eu-west-1.compute.amazonaws.com';
+  return 'localhost';
 }
 
 module.exports = {

@@ -312,7 +312,7 @@ a.slide_btn {
 
 .page3 {
   background: #afb1a7;
-  background: linear-gradient( to bottom, #bac192 0%, #818588 100% );
+  background: linear-gradient(to bottom, #bac192 0%, #818588 100%);
 }
 
 .tr2 {
@@ -554,7 +554,7 @@ a.slide_btn {
 
 .page4 {
   background: #afb1a7;
-  background: linear-gradient( to bottom, #818588 0%, #bac192 100% );
+  background: linear-gradient(to bottom, #818588 0%, #bac192 100%);
   border-top: solid 3px black;
 }
 
@@ -577,7 +577,7 @@ a.slide_btn {
 
 .page5 {
   background: #afb1a7;
-  background: linear-gradient( to bottom, #bac192 0%, #818588 100% );
+  background: linear-gradient(to bottom, #bac192 0%, #818588 100%);
   border-top: solid 3px black;
 }
 
@@ -590,7 +590,7 @@ a.slide_btn {
   letter-spacing: 3px;
   font-family: serif;
   border-bottom: solid;
-  margin: 0 10% 0;
+  margin: 0 10%;
 }
 
 .about-us-text {
@@ -673,7 +673,7 @@ a.slide_btn {
   height: 30px;
   z-index: 10;
   display: none;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .bar-transform12 {
@@ -851,6 +851,21 @@ a.slide_btn {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .about-us-title {
+    font-size: 16px;
+  }
+
+  .email,
+  .about-us-text {
+    font-size: 11px;
+  }
+
+  .about-us-text:nth-child(odd) {
+    display: none;
+  }
+}
+
 /****** Media-Queries HEIGHT Section ******/
 
 @media screen and (max-height: 770px) {
@@ -954,7 +969,8 @@ a.slide_btn {
     font-size: 16px;
   }
 
-  .email, .about-us-text {
+  .email,
+  .about-us-text {
     font-size: 11px;
   }
 
@@ -971,7 +987,6 @@ a.slide_btn {
     font-size: 11px;
   }
 }
-
 
 @media screen and (max-height: 430px) {
   .slide_viewer {

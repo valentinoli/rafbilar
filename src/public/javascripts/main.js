@@ -36,6 +36,20 @@ const baseHP = 700;
 const baseMaxspeed = 260;
 const information = window.data;
 
+const images = ['mynd1.jpg', 'mynd2.jpg', 'mynd3.jpg',
+  'mynd4.jpg', 'mynd5.jpg', 'mynd6.jpg', 'mynd7.jpg'];
+const quotes = [
+  '“You can never have an impact on society if you have not changed yourself.”  -Nelson Mandela',
+
+  '„Tilvera okkar er undarlegt ferðalag. Við erum gestir og hótel okkar er jörðin.“ -Tómas Guðmundsson (Hótel Jörð)',
+
+  '“We each have to make our own decision, and we\'ll each have to answer for this to our ancestors...” -The Most Venerable Book',
+
+  '“Taking good care of our home, its waters, its air, its soil, and its millions of plants and animals is a duty that must not be overlooked.” -Walking the Straight Path',
+
+  '“The ball is now in the court of policy-makers who will determine how quickly e-mobility is going to advance.” -Dr. Norbert Reithofer',
+];
+
 function activateOnePageScroll() {
   $('.main').onepage_scroll({
     sectionContainer: 'section',
@@ -150,8 +164,8 @@ $(document).ready(() => {
   activateOnePageScroll();
   initPicture(information);
   generateRandom();
-  const images = ['mynd1.jpg', 'mynd2.jpg', 'mynd3.jpg', 'mynd4.jpg', 'mynd5.jpg', 'mynd6.jpg', 'mynd7.jpg', 'mynd8.jpg', 'mynd9.jpg', 'mynd10.jpg', 'mynd11.jpg'];
-  $('.main-page-header').css({'background-image': 'url(backgrounds/' + images[Math.floor(Math.random() * images.length)] + ')'});
+  $('.main-page-header').css({ 'background-image': `url(backgrounds/${images[Math.floor(Math.random() * images.length)]})` });
+  $('.quote > p').text(quotes[Math.floor(Math.random() * quotes.length)]);
   $('.select-model1').click(selectModelListener1);
   $('.select-model2').click(selectModelListener2);
   $('.random-btn').click(generateRandom);
