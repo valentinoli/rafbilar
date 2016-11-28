@@ -1,4 +1,3 @@
-/* express kóði hér */
 const express = require('express');
 const path = require('path');
 const routes = require('./routes');
@@ -6,11 +5,16 @@ const favicon = require('serve-favicon');
 
 const app = express();
 
+// pug-template
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
 app.locals.pretty = true;
+
+// favicon
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
+// viljum nota /public möppuna
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);

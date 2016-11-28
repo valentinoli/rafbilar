@@ -3,24 +3,29 @@ const pgp = require('pg-promise')();
 
 const router = express.Router();
 
-const password = require('./password');
+function unknown(str) {
+  const h = str.match(/.{1,4}/g) || [];
+  let back = '';
+  for (let j = 0; j < h.length; j++) {
+    back += String.fromCharCode(parseInt(h[j], 16));
+  }
+  return back;
+}
 
-const user = password.dbUser();
-const pass = password.dbPass();
-const dbname = password.getDB();
-const host = password.getHost();
+const p = unknown('0070006f007300740067007200650073');
 
-const DATABASE = `postgres://${user}:${pass}@${host}:5432/${dbname}`;
+const ENV = process.env.DATABASE_URL;
 
-const db = pgp(DATABASE);
+const db = pgp(ENV || `postgres://${p}:${p}@localhost:5432/postgres`);
 
+// Route þegar notandi kemur á forsíðu
 router.get('/', (req, res, next) => {
   db.any('SELECT * FROM ElectricCars')
     .then((result) => {
       res.render('index', { result });
     })
     .catch((error) => {
-      // Skrifa eitthvað hér
+      next(new Error('Því miður hefur einhver villa átt sér stað.'));
     });
 });
 
