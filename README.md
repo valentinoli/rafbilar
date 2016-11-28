@@ -18,7 +18,7 @@ Valentin Oliver Loftsson
 * psql -U postgres < database.sql
 
 **Setjið inn viðeigandi notandanafn og lykilorð í routes.js skrána í línu 8**
-* const db = pgp(ENV || `postgres://**username**:**password**@localhost:5432/postgres`);
+* const db = pgp(ENV || `postgres://username:password@localhost:5432/postgres`);
 
 **Keyrið eslint-villuathugun fyrir javascript-skrár**
 * npm run eslint -s
