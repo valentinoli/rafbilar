@@ -7,16 +7,21 @@ Bjarki Viðar Kristjánsson
 
 Valentin Oliver Loftsson
 
+**Opnið skipanalínuglugga í verkefnamöppunni**
 **Setjið upp alla npm pakkana sem skilgreindir eru í package.json**
 * npm install
 
-**Keyrið eslint-villuathugun fyrir javascript**
+**Notið postgreSQL til að búa til gagnagrunn.**
+**Keyrið eftirfarandi skipun á skipanalínu og skrifið síðan inn lykilorðið "postgres"**
+psql -U postgres < database.sql
+
+**Keyrið eslint-villuathugun fyrir javascript-skrár**
 * npm run eslint -s
 
-**Keyrið stylelint-villuathugun fyrir CSS**
+**Keyrið stylelint-villuathugun fyrir CSS-skrár**
 * npm run stylelint -s
 
-**Kveikið loks á vefþjón og skoðið síðuna á localhost**
+**Kveikið loks á vefþjón**
 * npm start
 
 **Skoðið síðuna einnig á internetinu**
