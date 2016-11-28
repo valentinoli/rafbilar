@@ -22,15 +22,15 @@
             a= item.manufacturer + ' ' + item.model
   .comparison-img-container
     .model-img
-      img.img.img-model1(src='', alt='Model 1')
+      img.img.img-model1(src='#', alt='Model 1')
       h3.car-name1.car-name
     .model-img
-      img.img.img-model2(src='', alt='Model 2')
+      img.img.img-model2(src='#', alt='Model 2')
       h3.car-name2.car-name
-  input#comparison-result.cr(type='checkbox')
-  label.comparison-trigger(for='comparison-result')
-    #result-button
-      #button
+  input#comparison-result.cb(type='checkbox')
+  label(for='comparison-result')
+    .result-button
+      .button
         a(href='#') Niðurstöður
-        #bg
+        .bg
   include progresscontainers.pug
