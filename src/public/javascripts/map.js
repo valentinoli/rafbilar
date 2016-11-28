@@ -1,4 +1,6 @@
+
 function initMap() {
+  // fylki sem inniheldur staðsetningar á hleðslustöðvum
   const locations = [
     ['Miklabraut', 64.132059, -21.892566],
     ['Smáralind', 64.100894, -21.883619],
@@ -27,13 +29,16 @@ function initMap() {
     ['Kaffi Egilsstaðir', 65.258822, -14.406742],
   ];
 
+  // Búum til nýtt kort með miðju á miðpunkti Íslands
   const map = new google.maps.Map(document.getElementById('map'), {
     zoom: 6,
-    center: new google.maps.LatLng(locations[0][1], locations[0][2]),
+    center: new google.maps.LatLng(65, -18.8),
   });
 
+  // Búum til upplýsingaglugga
   const infowindow = new google.maps.InfoWindow();
 
+  // Búum til merkimiða fyrir staðsetningarnar og setjum á kortið
   let marker;
   for (let i = 0; i < locations.length; i++) {
     marker = new google.maps.Marker({
@@ -41,6 +46,8 @@ function initMap() {
       map,
     });
 
+    // Setjum atburðarhandler fyrir merkimiðana
+    // Ef notandi smellir á merkimiða þá birtist upplýsingagluggi
     marker.addListener('click', ((marker, i) => {
       return () => {
         infowindow.setContent(locations[i][0]);

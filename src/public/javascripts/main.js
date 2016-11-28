@@ -41,15 +41,18 @@ const images = ['mynd1.jpg', 'mynd2.jpg', 'mynd3.jpg',
 const quotes = [
   '“You can never have an impact on society if you have not changed yourself.”  -Nelson Mandela',
 
-  '„Tilvera okkar er undarlegt ferðalag. Við erum gestir og hótel okkar er jörðin.“ -Tómas Guðmundsson (Hótel Jörð)',
+  '„Tilvera okkar er undarlegt ferðalag. Við erum gestir og hótel okkar er jörðin.“ -Tómas Guðmundsson, Hótel Jörð',
 
   '“We each have to make our own decision, and we\'ll each have to answer for this to our ancestors...” -The Most Venerable Book',
 
   '“Taking good care of our home, its waters, its air, its soil, and its millions of plants and animals is a duty that must not be overlooked.” -Walking the Straight Path',
 
   '“The ball is now in the court of policy-makers who will determine how quickly e-mobility is going to advance.” -Dr. Norbert Reithofer',
+  
+  '“The time is right for electric cars - in fact the time is critical.” -Carlos Ghosn',
 ];
 
+// Virkjar one-page-scroll
 function activateOnePageScroll() {
   $('.main').onepage_scroll({
     sectionContainer: 'section',
@@ -66,6 +69,7 @@ function activateOnePageScroll() {
   });
 }
 
+// Virkjar bakgrunnsmyndir á síðu 2 (slider)
 function initPicture(info) {
   const imgslider = $('.img-wrapper');
   for (let i = 0; i < imgslider.length; i++) {
@@ -74,6 +78,7 @@ function initPicture(info) {
   }
 }
 
+// Uppfærir upplýsingar um bíl nr. 1
 function updateinfo1(info) {
   model1img.attr('src', `./img/${info.picture}`);
   carname1.text(`${info.manufacturer} ${info.model}`);
@@ -98,6 +103,7 @@ function updateinfo1(info) {
   p1maxspeed.css('width', `${scaledMaxspeed}%`);
 }
 
+// Uppfærir upplýsingar um bíl nr. 2
 function updateinfo2(info) {
   model2img.attr('src', `./img/${info.picture}`);
   carname2.text(`${info.manufacturer} ${info.model}`);
@@ -122,6 +128,8 @@ function updateinfo2(info) {
   p2maxspeed.css('width', `${scaledMaxspeed}%`);
 }
 
+// Atburðarhandler fyrir handahófskenndan samanburð
+// Birtir upplýsingar um tvo rafbíla af handahófi
 function generateRandom() {
   const rnd1 = Math.floor(Math.random() * information.length);
   let rnd2 = Math.floor(Math.random() * information.length);
@@ -132,6 +140,8 @@ function generateRandom() {
   updateinfo2(information[rnd2]);
 }
 
+// Atburðarhandler fyrir val á módel 1
+// Birtir upplýsingar um bíl sem var valinn
 function selectModelListener1(event) {
   const name = event.target.text;
   $('.btn1').text(name);
@@ -146,6 +156,8 @@ function selectModelListener1(event) {
   }
 }
 
+// Atburðarhandler fyrir val á módel 2
+// Birtir upplýsingar um bíl sem var valinn
 function selectModelListener2(event) {
   const name = event.target.text;
   $('.btn2').text(name);
@@ -160,12 +172,20 @@ function selectModelListener2(event) {
   }
 }
 
+// Keyrist í upphafi
 $(document).ready(() => {
+  // Virkjum one-page-scroll
   activateOnePageScroll();
+  // Setjum bakgrunnsmyndirnar á síðu 2
   initPicture(information);
+  // Virkjum handahófskenndan samanburð á síðu 3
   generateRandom();
+
+  // Setjum bakgrunnsmynd og quote á forsíðu af handahófi
   $('.main-page-header').css({ 'background-image': `url(backgrounds/${images[Math.floor(Math.random() * images.length)]})` });
   $('.quote > p').text(quotes[Math.floor(Math.random() * quotes.length)]);
+
+  // Bætum við atburðarhandlerum fyrir takkana á samanburðarsíðu (síðu 3)
   $('.select-model1').click(selectModelListener1);
   $('.select-model2').click(selectModelListener2);
   $('.random-btn').click(generateRandom);

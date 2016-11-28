@@ -1,3 +1,5 @@
+// Útfærir slider-inn á síðu 2 og setur viðeigandi atburðarhandler-a fyrir
+// vinstri (til baka) og hægri (áfram) takka
 $(document).ready(() => {
   $('.slider').each(() => {
     const $group = $('.slider').find('.slide_group');
@@ -5,6 +7,7 @@ $(document).ready(() => {
     const bulletArray = [];
     let currentIndex = 0;
 
+    // Hreyfir síðuna yfir á viðeigandi slæðu í samræmi við newIndex
     function move(newIndex) {
       let animateLeft;
       let slideLeft;
@@ -40,6 +43,7 @@ $(document).ready(() => {
       });
     }
 
+    // Setur atburðarhandler fyrir hægri takka
     $('.next_btn').on('click', () => {
       if (currentIndex < ($slides.length - 1)) {
         move(currentIndex + 1);
@@ -48,6 +52,7 @@ $(document).ready(() => {
       }
     });
 
+    // Setur atburðarhandler fyrir vinstri takka
     $('.previous_btn').on('click', () => {
       if (currentIndex !== 0) {
         move(currentIndex - 1);
@@ -56,6 +61,7 @@ $(document).ready(() => {
       }
     });
 
+    // Stillir alla slide-takkana og setur atburðarhandlera fyrir þá
     $.each($slides, (index) => {
       const $button = $('<a class="slide_btn">&bull;</a>');
 
