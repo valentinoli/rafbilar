@@ -15,7 +15,7 @@ Valentin Oliver Loftsson
 **Notið postgreSQL til að búa til gagnagrunn.**
 
 **Keyrið eftirfarandi skipun á skipanalínu og skrifið síðan inn lykilorðið "postgres"**
-psql -U postgres < database.sql
+* psql -U postgres < database.sql
 
 **Keyrið eslint-villuathugun fyrir javascript-skrár**
 * npm run eslint -s
