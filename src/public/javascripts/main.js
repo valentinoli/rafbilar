@@ -48,7 +48,7 @@ const quotes = [
   '“Taking good care of our home, its waters, its air, its soil, and its millions of plants and animals is a duty that must not be overlooked.” -Walking the Straight Path',
 
   '“The ball is now in the court of policy-makers who will determine how quickly e-mobility is going to advance.” -Dr. Norbert Reithofer',
-  
+
   '“The time is right for electric cars - in fact the time is critical.” -Carlos Ghosn',
 ];
 
