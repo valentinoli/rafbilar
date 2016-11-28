@@ -14,7 +14,7 @@ Valentin Oliver Loftsson
 
 **Notið postgreSQL til að búa til gagnagrunn.**
 
-**Setjið inn viðeigandi notandanafn og lykilorð í routes.js skrána í línu 8**
+**Setjið inn viðeigandi notandanafn og lykilorð í routes.js skrána í línu 8 og _vistið skjalið_**
 * const db = pgp(ENV || \`postgres://**username**:**password**@localhost:5432/postgres\`);
 
 **Keyrið eftirfarandi skipun á skipanalínu og skrifið lykilorðið**
