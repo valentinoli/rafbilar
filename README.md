@@ -8,10 +8,12 @@ Bjarki Viðar Kristjánsson
 Valentin Oliver Loftsson
 
 **Opnið skipanalínuglugga í verkefnamöppunni**
+
 **Setjið upp alla npm pakkana sem skilgreindir eru í package.json**
 * npm install
 
 **Notið postgreSQL til að búa til gagnagrunn.**
+
 **Keyrið eftirfarandi skipun á skipanalínu og skrifið síðan inn lykilorðið "postgres"**
 psql -U postgres < database.sql
 
