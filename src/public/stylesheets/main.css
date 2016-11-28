@@ -507,7 +507,7 @@ a.slide_btn {
   letter-spacing: 2px;
 }
 
-.button .bg {
+.button #bg {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -801,7 +801,7 @@ a.slide_btn {
     margin: 12px 30px;
   }
 
-  .cr:checked ~ .comparison-processbar-container {
+  .cb:checked ~ .comparison-processbar-container {
     opacity: 1;
     transform: translateY(7%);
   }
@@ -924,7 +924,7 @@ a.slide_btn {
     margin: 12px 30px;
   }
 
-  .cr:checked ~ .comparison-processbar-container {
+  .cb:checked ~ .comparison-processbar-container {
     opacity: 1;
     transform: translateY(13%);
   }
