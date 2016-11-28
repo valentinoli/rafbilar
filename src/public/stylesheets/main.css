@@ -410,10 +410,6 @@ a.slide_btn {
   padding-top: 26px;
 }
 
-.comparison-processbar-container span {
-  display: inline-block;
-}
-
 .progress-container {
   display: flex;
   flex-direction: column;
@@ -654,6 +650,7 @@ a.slide_btn {
   height: 2px;
   background: white;
   margin: 6px 0;
+  display: block;
 }
 
 .bar-transform {
