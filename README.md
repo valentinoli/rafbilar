@@ -14,8 +14,11 @@ Valentin Oliver Loftsson
 
 **Notið postgreSQL til að búa til gagnagrunn.**
 
-**Keyrið eftirfarandi skipun á skipanalínu og skrifið síðan inn lykilorðið "postgres"**
+**Keyrið eftirfarandi skipun á skipanalínu og skrifið lykilorðið**
 * psql -U postgres < database.sql
+
+**Setjið inn viðeigandi notandanafn og lykilorð í routes.js skrána í línu 8**
+* const db = pgp(ENV || `postgres://**username**:**password**@localhost:5432/postgres`);
 
 **Keyrið eslint-villuathugun fyrir javascript-skrár**
 * npm run eslint -s
