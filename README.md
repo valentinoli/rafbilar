@@ -30,18 +30,18 @@ Valentin Oliver Loftsson
 
 **Setjið psql sem umhverfisbreytu, þ.e sem "Environment Variable" í Path.**
 
-**Windows:
+Leiðbeiningar fyrir Windows:
 - Hægri smellið á My Computer (eða This PC) og veljið Properties. Opnið System Properties með því að velja Advanced System Settings á vinstri hlið. 
 - í System Properties veljið Advanced flipann og smellið síðan á Environment Variables takkann.
 - Veljið path í User variables for Notandi
 - Setjið inn
-	- C:\Program Files\PostgreSQL\9.6  (9.6 er útgáfan)
-	- C:\Program Files\PostgreSQL\9.6\bin
-	- C:\Program Files\PostgreSQL\9.6\lib**
+  - C:\Program Files\PostgreSQL\9.6  (9.6 er útgáfan)
+  - C:\Program Files\PostgreSQL\9.6\bin
+  - C:\Program Files\PostgreSQL\9.6\lib
 
-**Mac:
+Leiðbeiningar fyrir Mac:
 Á skipunalínunni, sláið inn.
-export PATH=/Library/PostgreSQL/9.6/bin:$PATH**
+export PATH=/Library/PostgreSQL/9.6/bin:$PATH
 
 **Setjið inn viðeigandi notandanafn og lykilorð í routes.js skrána í línu 8 og _vistið skjalið_**
 * const db = pgp(ENV || \`postgres://**username**:**password**@localhost:5432/postgres\`);
