@@ -31,7 +31,7 @@ Leiðbeiningar fyrir Mac:
 **Setjið inn viðeigandi notandanafn og lykilorð í routes.js skrána í línu 8 og _vistið skjalið_**
 * const db = pgp(ENV || \`postgres://**username**:**password**@localhost:5432/postgres\`);
 
-**Keyrið eftirfarandi skipun á skipanalínu og skrifið lykilorðið**
+**Keyrið eftirfarandi skipun á skipanalínu. Á eftir þessari skipun þarf notandinn að slá inn lykilorðið sem hann valdi**
 * psql -U postgres < database.sql
 
 **Keyrið eslint-villuathugun fyrir javascript-skrár**
