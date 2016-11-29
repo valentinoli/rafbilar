@@ -5,7 +5,7 @@ const router = express.Router();
 
 const ENV = process.env.DATABASE_URL;
 
-const db = pgp(ENV || `postgres://postgres:postgres@localhost:5432/postgres`);
+const db = pgp(ENV || 'postgres://postgres:postgres@localhost:5432/postgres');
 
 // Route þegar notandi kemur á forsíðu
 router.get('/', (req, res, next) => {
