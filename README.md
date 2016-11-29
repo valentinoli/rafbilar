@@ -7,7 +7,7 @@ Bjarki Viðar Kristjánsson
 
 Valentin Oliver Loftsson
 
-## Vinsamlegast fylgið eftirfarandi leiðbeiningum í uppsetningu á verkefninu
+### Vinsamlegast fylgið eftirfarandi leiðbeiningum í uppsetningu á verkefninu
 
 **Opnið skipanalínuglugga í verkefnamöppunni**
 
