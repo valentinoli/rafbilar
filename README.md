@@ -12,20 +12,6 @@ Valentin Oliver Loftsson
 **Setjið upp alla npm pakkana sem skilgreindir eru í package.json**
 * npm install
 
-# Lokaverkefni í vefforritun
-## Háskóli Íslands, haust 2016
-### Höfundar:
-Huy Van Nguyen
-
-Bjarki Viðar Kristjánsson
-
-Valentin Oliver Loftsson
-
-**Opnið skipanalínuglugga í verkefnamöppunni**
-
-**Setjið upp alla npm pakkana sem skilgreindir eru í package.json**
-* npm install
-
 **Notið Postgres vefþjónustu til þess að tengjast gagnagrunni. Þið getið niðurhalað þjónustunni á https://www.postgresql.org/. Setjið þjónustuna upp í tölvunni og búið til notandanafn og lykilorð.**
 
 **Setjið psql sem umhverfisbreytu, þ.e sem "Environment Variable" í Path.**
