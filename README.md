@@ -21,9 +21,7 @@ Leiðbeiningar fyrir Windows:
 - í System Properties veljið Advanced flipann og smellið síðan á Environment Variables takkann.
 - Veljið path í User variables for Notandi
 - Setjið inn
-  - C:\Program Files\PostgreSQL\9.6  (9.6 er útgáfan)
   - C:\Program Files\PostgreSQL\9.6\bin
-  - C:\Program Files\PostgreSQL\9.6\lib
 
 Leiðbeiningar fyrir Mac:
 * Sláið inn á skipanalínu: export PATH=/Library/PostgreSQL/9.6/bin:$PATH
