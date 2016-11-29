@@ -14,7 +14,7 @@ Valentin Oliver Loftsson
 **Setjið upp alla npm pakkana sem skilgreindir eru í package.json með eftirfarandi skipun:**
 * npm install
 
-**Notið Postgres vefþjónustu til þess að tengjast gagnagrunni. Þið getið niðurhalað þjónustunni á https://www.postgresql.org/. Setjið þjónustuna upp í tölvunni og búið til notandanafn og lykilorð.**
+**Notið Postgres vefþjónustu til þess að tengjast gagnagrunni. Þið getið niðurhalað þjónustunni á https://www.postgresql.org/. Setjið þjónustuna upp í tölvunni og búið til lykilorð.**
 
 **Setjið psql sem umhverfisbreytu, þ.e sem "Environment Variable" í Path.**
 
@@ -28,8 +28,8 @@ Leiðbeiningar fyrir Windows:
 Leiðbeiningar fyrir Mac:
 * Sláið inn á skipanalínu: export PATH=/Library/PostgreSQL/9.6/bin:$PATH
 
-**Setjið inn viðeigandi notandanafn og lykilorð í routes.js skrána í línu 8 og _vistið skjalið._**
-* const db = pgp(ENV || \`postgres://**username**:**password**@localhost:5432/postgres\`);
+**Setjið inn viðeigandi lykilorð í línu 8 í src/routes.js skránni og _vistið skjalið._**
+* const db = pgp(ENV || \`postgres://postgres:**password**@localhost:5432/postgres\`);
 
 **Keyrið eftirfarandi skipun á skipanalínu. Á eftir þessari skipun þarf notandinn að slá inn lykilorðið sem hann valdi.**
 * psql -U postgres < database.sql
