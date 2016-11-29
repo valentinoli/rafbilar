@@ -26,8 +26,7 @@ Leiðbeiningar fyrir Windows:
   - C:\Program Files\PostgreSQL\9.6\lib
 
 Leiðbeiningar fyrir Mac:
-Á skipunalínunni, sláið inn.
-export PATH=/Library/PostgreSQL/9.6/bin:$PATH
+* Sláið inn á skipanalínu: export PATH=/Library/PostgreSQL/9.6/bin:$PATH
 
 **Setjið inn viðeigandi notandanafn og lykilorð í routes.js skrána í línu 8 og _vistið skjalið_**
 * const db = pgp(ENV || \`postgres://**username**:**password**@localhost:5432/postgres\`);
