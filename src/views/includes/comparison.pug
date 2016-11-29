@@ -34,21 +34,21 @@
         a(href='#') Niðurstöður
         span#bg
   - var ids = ['price', 'battery', 'range', 'horsepower', 'maxspeed']
-.comparison-processbar-container
-  label.comparison-close(for='comparison-result')
-    span.mobile-bar.bar-transform.bar-transform11
-    span.mobile-bar.bar-transform.bar-transform12
-  .progress-container
-    h3.c-name.car-name1 Car name
-    each val in ids
-      div
-        span(class=val+'1')
-        .myprogress-bar
-          div(id=val+'1' class='pbar')
-  .progress-container
-    h3.c-name.car-name2 Car name
-    each val in ids
-      div
-        .myprogress-bar
-          div(id=val+'2' class='pbar')
-        span(class=val+'2')
+  .comparison-processbar-container
+    label.comparison-close(for='comparison-result')
+      span.mobile-bar.bar-transform.bar-transform11
+      span.mobile-bar.bar-transform.bar-transform12
+    .progress-container
+      h3.c-name.car-name1 Car name
+      each val in ids
+        div
+          span(class=val+'1')
+          .myprogress-bar
+            div(id=val+'1' class='pbar')
+    .progress-container
+      h3.c-name.car-name2 Car name
+      each val in ids
+        div
+          .myprogress-bar
+            div(id=val+'2' class='pbar')
+          span(class=val+'2')
