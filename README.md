@@ -7,6 +7,8 @@ Bjarki Viðar Kristjánsson
 
 Valentin Oliver Loftsson
 
+## Vinsamlegast fylgið eftirfarandi leiðbeiningum í uppsetningu á verkefninu
+
 **Opnið skipanalínuglugga í verkefnamöppunni**
 
 **Setjið upp alla npm pakkana sem skilgreindir eru í package.json**
